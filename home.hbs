@@ -4,6 +4,9 @@
 {{!-- The content area on the homepage --}}
 <main id="main" class="site-main">
 
+	<div class="hero inner underline">
+				<p class="hero-text">My name is Charles Lavoie. I&#x27;m a freelance web developer, author and speaker based in Montreal, Canada. It’s nice to meet you.</p>
+	</div>
 	{{#get "authors" limit="1" order="created_at asc" as |user|}}
 		{{#user}}
 			{{#if bio}}
