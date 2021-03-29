@@ -8,7 +8,7 @@
 						{{#user}}
 							{{#if profile_image}}
 							<p class="profile"><a href="{{@site.url}}">
-								<img srcset="{{img_url profile_image size="xxs"}} 100w, {{img_url profile_image size="xs"}} 300w" sizes="(max-width: 800px) 50px, 100px" src="{{img_url profile_image size="xxs"}}" alt="{{name}}" class="avatar" /></a></p>
+								<img srcset="{{img_url @site.logo size="xxs"}} 100w, {{img_url @site.logo size="xs"}} 300w" sizes="(max-width: 800px) 50px, 100px" src="{{img_url @site.logo size="xxs"}}" alt="{{name}}" class="avatar" /></a></p>
 							{{/if}}
 						{{/user}}
 					{{/get}}
