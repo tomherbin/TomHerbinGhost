@@ -4,7 +4,7 @@
 		<div class="site-header-inside">
 			<div class="site-branding">
 				{{#if @site.logo}}
-				{{!-- <p class="site-logo"><a href="{{@site.url}}"><img src="{{img_url @site.logo size="xs"}}" alt="{{@site.title}}" /></a></p> --}}
+				 <p class="site-logo"><a href="{{@site.url}}"><img src="{{img_url @site.logo size="xs"}}" alt="{{@site.title}}" /></a></p> 
 				{{else}}
 					{{#get "authors" limit="1" order="created_at asc" as |user|}}
 						{{#user}}
