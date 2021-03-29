@@ -2,7 +2,6 @@
 <header id="masthead" class="site-header">
 	<div class="site-header-wrap">
 		<div class="site-header-inside">
-
 			<div class="site-branding">
 				{{#if @site.logo}}
 				<p class="site-logo"><a href="{{@site.url}}"><img src="{{img_url @site.logo size="xs"}}" alt="{{@site.title}}" /></a></p>
@@ -16,6 +15,7 @@
 						{{/user}}
 					{{/get}}
 				{{/if}}
+			
 				<div class="site-identity">
 					{{#is "index"}}
 					<h1 class="site-title"><a href="{{@site.url}}">{{@site.title}}</a></h1>
