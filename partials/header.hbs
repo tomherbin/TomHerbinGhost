@@ -4,6 +4,14 @@
 		<div class="site-header-inside">
 		
 			<div class="site-branding">
+					{{#get "authors" limit="1" order="created_at asc" as |user|}}
+						{{#user}}
+							{{#if profile_image}}
+							<p class="profile"><a href="{{@site.url}}">
+								<img srcset="{{img_url profile_image size="xxs"}} 100w, {{img_url profile_image size="xs"}} 300w" sizes="(max-width: 800px) 50px, 100px" src="{{img_url profile_image size="xxs"}}" alt="{{name}}" class="avatar" /></a></p>
+							{{/if}}
+						{{/user}}
+					{{/get}}
 			<div class="site-identity">
 					{{#is "index"}}
 					<h1 class="site-title"><a href="{{@site.url}}">{{@site.title}}</a></h1>
@@ -14,20 +22,6 @@
 					<p class="site-description">{{@site.description}}</p>
 					{{/if}}
 				</div><!-- .site-identity -->
-				{{#if @site.logo}}
-				 <p class="site-logo"><a href="{{@site.url}}"><img src="{{img_url @site.logo size="xs"}}" alt="{{@site.title}}" /></a></p> 
-				{{else}}
-					{{#get "authors" limit="1" order="created_at asc" as |user|}}
-						{{#user}}
-							{{#if profile_image}}
-							<p class="profile"><a href="{{@site.url}}">
-								<img srcset="{{img_url profile_image size="xxs"}} 100w, {{img_url profile_image size="xs"}} 300w" sizes="(max-width: 800px) 50px, 100px" src="{{img_url profile_image size="xxs"}}" alt="{{name}}" class="avatar" /></a></p>
-							{{/if}}
-						{{/user}}
-					{{/get}}
-				{{/if}}
-			
-				
 				<button id="menu-toggle" class="menu-toggle"><span class="screen-reader-text">{{t "Menu"}}</span><span class="icon-menu" aria-hidden="true"></span></button>
 			</div><!-- .site-branding -->
 
