@@ -3,15 +3,10 @@
 
 {{!-- The content area on the homepage --}}
 <main id="main" class="site-main">
-	{{#get "authors" limit="1" order="created_at asc" as |user|}}
-		{{#user}}
-			{{#if bio}}
-			<div class="hero inner underline">
-				<p class="hero-text">{{bio}}</p>
-			</div>
-			{{/if}}
-		{{/user}}
-	{{/get}}
+	<div class="hero inner underline">
+		<p class="hero-text">Salut ! Je suis Tom Herbin. Ingénieur informatique, investisseur et créateur de contenu.</p></br>
+		<p class="hero-text">Dans ce blog, j'explore les différentes stratégies pour faire fructifier votre argent.</p>
+	</div>
 
 	{{!-- The featured posts --}}
 	{{#get "posts" filter="featured:true" limit="3" include="tags" as |featured_posts|}}
