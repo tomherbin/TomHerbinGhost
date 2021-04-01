@@ -76,9 +76,93 @@ template {
   display: none;
 }
 
+/* Book summaries */
+
+@media (min-width: 701px) {
+  .books {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .book-card {
+    width: 46%;
+  }
+}
+.book-card {
+  display: flex;
+}
+.book__art {
+  flex: 0 0 150px;
+  margin-right: 1.5rem;
+}
+.book-cover {
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px var(--box-shadow);
+}
+.book__art img {
+  width: 100%;
+}
+@media (min-width: 801px) {
+  .books {
+    display: flex;
+  }
+}
+
+/* Text */
+
+.fs45 { font-size: 2.81rem }
+.fs36 { font-size: 2.25rem; }
+.fs32 { font-size: 2rem; }
+.fs28 { font-size: 1.75rem; }
+.fs24 { font-size: 1.5rem; }
+.fs16 { font-size: 1rem; }
+.fs14 { font-size: 0.875rem; }
+
+.b { font-weight: bold }
+
+.font-script {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.tc { text-align: center; }
+.tr { text-align: right; }
+.normal { font-weight: normal; }
+.ttu { text-transform: uppercase; }
+
+.color-blue { color: var(--color-blue) }
+ 
+.color-text,
+.color-text a:link,
+a:link.color-text { color: var(--color-default) !important; }
+
+.color-grey,
+.color-text a:hover,
+a:hover.color-text,
+.color-grey a,
+a.color-grey { color: var(--color-grey) !important; }
+
+.line {
+  width: 87px;
+  border: 2px solid var(--color-blue);
+}
+.line--center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* Links */
+
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+}
+
+a:link,
+a:visited {
+  color: var(--color-blue);
+  transition: color 0.3s;
 }
 
 a:focus {
@@ -89,6 +173,8 @@ a:active,
 a:hover {
   outline: 0;
 }
+
+
 
 abbr[title] {
   border-bottom: none;
