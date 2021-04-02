@@ -27,6 +27,24 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+:root {
+  /* Colours */
+  --color-default: #333;
+  --color-black: #111;
+  --color-blue: #3897D3;
+  --color-blue-hover: #227cb5;
+  --color-yellow: #EEF13B;
+  --color-light-bg: #F8FAFC;
+  --color-light-grey: #E3E3E3;
+  --color-grey: #666;
+  --page-bg: #fff;
+  --box-shadow: rgba(0,0,0,0.2);
+
+  /* Layout */
+  --box-corner-radius: 10px;
+}
+
+
 body {
   margin: 0;
 }
