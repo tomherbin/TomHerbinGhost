@@ -348,11 +348,13 @@ body {
 
 a {
   color: #d4a259;
+  text-decoration: none;
   -webkit-transition: color .3s ease;
   transition: color .3s ease;
 }
 a:hover, a:focus {
   color: #1d1d1d;
+  text-decoration: none;
 }
 
 h1,
