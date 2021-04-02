@@ -160,7 +160,7 @@ template {
 
 .book_art_description {
   line-height: 1.3;
-  font-size: 16px;
+  font-size: 0.8rem;
 }
 
 @media (min-width: 801px) {
